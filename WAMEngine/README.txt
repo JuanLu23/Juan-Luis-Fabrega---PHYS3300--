@@ -5,6 +5,7 @@ Primero que todo se debe crear un mundo y un cuerpo. Para crear un cuerpo y un m
 	esta libreria contiene "Body" y "Calculations", que son dos librerias necesarias para general los cuerpos y los calculos.
 	Ahora para generar un mundo y generar un cuerpo se debe colocar esto en el main.cpp del codigo 
 	-
+				Posiciones:	x	y
 		WAMWorld firstSimulation(vec2D(0.0f, 9.81f));
 		WBody firstBody;
 	-
