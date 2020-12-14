@@ -5,12 +5,14 @@ Primero que todo se debe crear un mundo y un cuerpo. Para crear un cuerpo y un m
 	esta libreria contiene "Body" y "Calculations", que son dos librerias necesarias para general los cuerpos y los calculos.
 	Ahora para generar un mundo y generar un cuerpo se debe colocar esto en el main.cpp del codigo 
 	-
+				Posiciones:	x	y
 		WAMWorld firstSimulation(vec2D(0.0f, 9.81f));
 		WBody firstBody;
 	-
 Empezando desde el WAMWordl, se inicia llamando al struct WAMWorld e inicializandolo, en este caso lo llamamos firstSimulation con los 
-parametros (vec2D(0.0f,9.81f)). Estos valores que se le mandan al constructor del struct son necesarios para la simulacion de un mundo.
-En otras palabras esos valores son que determinan la gravedad. 
+parametros (vec2D(0.0f,9.81f)). Estos valores que se le mandan al constructor del struct son necesarios para la simulacion de un mundo, 
+siendo puntos en los ejes x y y. Como se esta creando la gravedad se manda un vec2D donde solo interacuta en el eje y. En otras palabras 
+esos parametros son los que determinan la gravedad. 
 
 Ahora con WBody se inicializa igualmente que WAMWorld. Al inicializar el struct este genera un cuerpo. 
 
